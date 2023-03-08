@@ -1,8 +1,7 @@
 <template>
-  <span>
     <!-- 动态拿到图标 -->
+    <!-- <span class="d-icons"></span> -->
     <i :class="`d-icon-${name}`"></i>
-  </span>
 </template>
 
 <script lang="ts">

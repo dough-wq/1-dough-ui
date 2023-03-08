@@ -25,6 +25,7 @@
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^4.4.0",
     "stylelint-selector-bem-pattern": "^2.1.1",
+    "theme-chalk": "^1.0.0-dev.9",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue": "^3.2.45"
   },
