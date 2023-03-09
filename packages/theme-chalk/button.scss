@@ -11,6 +11,7 @@
     cursor: pointer;
     outline: none;
     padding: 0 15px;
+    margin-left: 10px;
     background: rgb(210, 83, 83);
     vertical-align: middle;
     border: rgb(210, 83, 83);
@@ -35,7 +36,13 @@
     }
     // 修饰符
     @include m(primary){
-        @include button-type($--color-white,$--color-primary,$--color-primary)
+        @include button-type($--color-white,$--color-primary,$--color-primary);
+        &:hover,
+        &:focus{
+            background:#336699 ;
+            border-color:#336699;
+            color: #fff;
+        }
     }
     @include m(success){
         @include button-type($--color-white,$--color-success,$--color-success);
@@ -47,12 +54,30 @@
         }
     } 
     @include m(info){
-        @include button-type($--color-white,$--color-info,$--color-info)
+        @include button-type($--color-white,$--color-info,$--color-info);
+        &:hover,
+        &:focus{
+            background:#808080 ;
+            border-color:#808080;
+            color: #fff;
+        }
     }
     @include m(danger){
-        @include button-type($--color-white,$--color-danger,$--color-danger)
+        @include button-type($--color-white,$--color-danger,$--color-danger);
+        &:hover,
+        &:focus{
+            background:#FF6666 ;
+            border-color:#FF6666;
+            color: #fff;
+        }
     }
     @include m(warning){
-        @include button-type($--color-white,$--color-warning,$--color-warning)
+        @include button-type($--color-white,$--color-warning,$--color-warning);
+        &:hover,
+        &:focus{
+            background:#FFCC33 ;
+            border-color:#FFCC33;
+            color: #fff;
+        }
     }
 }

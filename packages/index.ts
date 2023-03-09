@@ -2,11 +2,13 @@
 import { App } from "vue";
 import Button from "./components/button";
 import Icon from "./components/icon";
+import ButtonGroup from "./components/button-group";
 
 const components = [
   // 全局引入
   Button,
   Icon,
+  ButtonGroup,
 ];
 // 全局动态添加组件
 export const install = (app: App) => {
@@ -15,7 +17,7 @@ export const install = (app: App) => {
   });
 };
 // 全局注册 use.(dough-ui)
-export { Button, Icon };
+export { Button, Icon,ButtonGroup };
 export default {
   install,
 };
