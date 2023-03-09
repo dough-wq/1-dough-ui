@@ -1,9 +1,9 @@
 /* 公共的变量 */
-@import url("../mixins/config.scss");
-$--color-primary:#5541e6;
+@use "../mixins/config.scss";
+$--color-primary:#336699;
 $--color-white:#ffffff;
 $--color-black:#000;
-$--color-success:#0fb81a;
-$--color-warning:#e1a837;
-$--color-danger:#f31818;
-$--color-info:#999;
+$--color-success:#99CC33;
+$--color-warning:#FF9900;
+$--color-danger:#FF0033;
+$--color-info:#c2ccd0;

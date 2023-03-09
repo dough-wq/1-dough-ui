@@ -1,0 +1,58 @@
+@import "./common/var.scss";
+@import "./mixins/mixin.scss";
+
+// bem创建样式
+// (1)x-button b
+@include b(button){
+    display: inline-block;
+    line-height: 1;
+    min-height: 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    padding: 0 15px;
+    background: rgb(210, 83, 83);
+    vertical-align: middle;
+    border: rgb(210, 83, 83);
+    border-radius: 5px;
+    // icon 在嵌套中只要有样式是 d-icon
+    & [class*='#{$namespace}-icon-']{
+        vertical-align: middle;
+        & + span{
+            margin-left:5px
+        }
+    }
+
+    // 状态 when
+    @include when(disabled){
+        cursor: not-allowed;
+    }
+    @include when(round){
+        border-radius: 20px;
+    }
+    @include when(loading){
+        pointer-events: none;
+    }
+    // 修饰符
+    @include m(primary){
+        @include button-type($--color-white,$--color-primary,$--color-primary)
+    }
+    @include m(success){
+        @include button-type($--color-white,$--color-success,$--color-success);
+        &:hover,
+        &:focus{
+            background:#339933 ;
+            border-color:#339933;
+            color: #fff;
+        }
+    } 
+    @include m(info){
+        @include button-type($--color-white,$--color-info,$--color-info)
+    }
+    @include m(danger){
+        @include button-type($--color-white,$--color-danger,$--color-danger)
+    }
+    @include m(warning){
+        @include button-type($--color-white,$--color-warning,$--color-warning)
+    }
+}

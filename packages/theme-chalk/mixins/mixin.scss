@@ -52,3 +52,10 @@
     }
   }
 }
+
+// 因为在button中挨个写不同的样式很麻烦，所以就在minxin中写一个方法，专门用来处理button-type
+@mixin button-type($color,$border-color,$background){
+    color:$color;   //字体颜色
+    border-color:$border-color; //边框颜色
+    background: $background;    //背景颜色
+}

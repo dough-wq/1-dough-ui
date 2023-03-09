@@ -7,7 +7,9 @@ import Button from 'packages/components/button';
 <template>
     <div>
         app
-        <d-button></d-button>
+        <d-button type="primary">an</d-button>
+        <d-button type="info" disabled></d-button>
+        <d-button type="success" disabled round icon="d-icon-jiazai"></d-button>
         <d-icon name="jiazai"></d-icon>
     </div>
 </template>
