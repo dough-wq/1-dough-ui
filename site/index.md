@@ -14,7 +14,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: 在 github 上查看
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/gggggihggg/dough-ui
 features:
   - icon:
       src: /images/vue.png

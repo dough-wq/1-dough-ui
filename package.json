@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
+    "@vitepress-demo-preview/component": "^2.2.0",
+    "@vitepress-demo-preview/plugin": "^1.1.7",
     "jsdom": "^21.1.0",
     "postcss-scss": "^4.0.6",
     "stylelint-config-prettier": "^9.0.5",

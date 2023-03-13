@@ -12,10 +12,15 @@
     outline: none;
     padding: 0 15px;
     margin-left: 10px;
-    background: rgb(210, 83, 83);
+    margin-bottom: 10px;
+    background: $--color-primary;
     vertical-align: middle;
-    border: rgb(210, 83, 83);
+    border: $--color-primary;
+    color: $--color-white;
     border-radius: 5px;
+    &:hover,&:focus{
+        opacity: 0.5;
+    }
     // icon 在嵌套中只要有样式是 d-icon
     & [class*='#{$namespace}-icon-']{
         vertical-align: middle;
@@ -39,45 +44,42 @@
         @include button-type($--color-white,$--color-primary,$--color-primary);
         &:hover,
         &:focus{
-            background:#336699 ;
-            border-color:#336699;
-            color: #fff;
+            opacity: 0.5;
         }
     }
     @include m(success){
         @include button-type($--color-white,$--color-success,$--color-success);
         &:hover,
         &:focus{
-            background:#339933 ;
-            border-color:#339933;
-            color: #fff;
+            opacity: 0.5;
         }
     } 
     @include m(info){
         @include button-type($--color-white,$--color-info,$--color-info);
         &:hover,
         &:focus{
-            background:#808080 ;
-            border-color:#808080;
-            color: #fff;
+            opacity: 0.5;
         }
     }
     @include m(danger){
         @include button-type($--color-white,$--color-danger,$--color-danger);
         &:hover,
         &:focus{
-            background:#FF6666 ;
-            border-color:#FF6666;
-            color: #fff;
+            opacity: 0.5;
         }
     }
     @include m(warning){
         @include button-type($--color-white,$--color-warning,$--color-warning);
         &:hover,
         &:focus{
-            background:#FFCC33 ;
-            border-color:#FFCC33;
-            color: #fff;
+            opacity: 0.5;
+        }
+    }
+    @include m(rainbow){
+        @include button-type($--color-white,$--color-rainbow,$--color-rainbow);
+        &:hover,
+        &:focus{
+           opacity: 0.5;
         }
     }
 }
