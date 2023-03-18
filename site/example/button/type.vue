@@ -8,4 +8,3 @@
     <d-button type="danger">danger</d-button>
     <d-button type="rainbow">rainbow</d-button>
   </template>
-  <script setup lang="ts"></script>
