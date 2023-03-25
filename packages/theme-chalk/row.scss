@@ -1,0 +1,14 @@
+@import "./common/var.scss";
+@import "./mixins/mixin.scss";
+
+@include b(row) {
+    display: flex;
+    flex-wrap: wrap;
+    // 添加is-
+    @include when(justify-end){ //is-justify-end
+        justify-content:flex-end
+    }
+    @include when(justify-space-around){ //is-justify-end
+        justify-content:space-around;
+    }
+}

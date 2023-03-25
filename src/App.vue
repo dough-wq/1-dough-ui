@@ -1,19 +1,29 @@
-import Icon from 'packages/components/icon'; import Button from
-'packages/components/button';
-
 <template>
-  <div>
-    app
-    <d-button type="primary">an</d-button>
-    <d-button type="info" disabled></d-button>
-    <d-button type="warning" disabled round icon="d-icon-jiazai"></d-button>
-    <d-icon name="jiazai"></d-icon>
-    <d-button-group>
-      <d-button type="primary">an</d-button>
-      <!-- <d-button type="info" disabled></d-button> -->
-      <d-button type="success" ></d-button>
-      <d-button type="rainbow" ></d-button>
-      <d-button type="danger" ></d-button>
-    </d-button-group>
+  <div class="app">
+    <!-- 布局 -->
+    <div>header</div>
+    <!-- 内容 -->
+    <div class="content">
+      <div class="list">
+        <div>button</div>
+      </div>
+      <div class="content-show">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.app{
+  .content{
+    display: flex;
+    .list{
+      width: 20%;
+      margin-right: 20px;
+    }
+    .content-show{
+      flex: 1;
+    }
+  }
+}
+</style>
